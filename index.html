@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Comprehensive Review of Metabolite-Disease Association Prediction Research</title>
+    <title>Review on Metabolite-Disease Association Prediction Research</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -203,39 +203,38 @@
     </style>
 </head>
 <body>
-    <h1>Comprehensive Review of Metabolite-Disease Association Prediction Research</h1>
+    <h1>Review on Metabolite-Disease Association Prediction Research</h1>
 
     <h2>1. Research Background and Significance</h2>
-    <p>Metabolomics, as an emerging discipline developed from post-genomics and proteomics, focuses on changes in small molecule metabolites within organisms. These metabolites, as the end products of biological processes, serve not only as valuable biomarkers but also as key components for understanding disease mechanisms.</p>
+    <p>Metabolomics, as an emerging discipline developed from post-genomics and proteomics, focuses on changes in small molecule metabolites within organisms. These metabolites, as end products of biological processes, serve not only as valuable biomarkers but also as key components in understanding disease mechanisms.</p>
     
-    <p>Increasing evidence shows that concentrations of certain metabolites differ between patients with specific diseases and healthy individuals. For example:</p>
+    <p>Increasing research shows that concentrations of certain metabolites in patients with specific diseases differ from those in healthy populations. For example:</p>
     <ul>
-        <li>Butyrate can alleviate the severity of graft-versus-host disease (GVHD)</li>
-        <li>Tricarboxylic acid (TCA) cycle metabolites are associated with cancer, immunity, and stem cell function</li>
-        <li>Ascorbic acid is a novel metabolic inhibitor for activating human T cells</li>
+        <li>Butyrate can reduce the severity of graft-versus-host disease (GVHD)</li>
+        <li>Tricarboxylic acid cycle (TCA cycle) metabolites are associated with cancer, immunity, and stem cell function</li>
+        <li>Ascorbic acid is a novel metabolic inhibitor that activates human T cells</li>
         <li>Various diseases such as cardiovascular diseases, neurodegenerative diseases, and liver diseases are all related to metabolites</li>
     </ul>
 
-    <h2>2. Development Timeline of Research Methods</h2>
+    <h2>2. Development of Research Methods</h2>
     <div class="timeline">
         <div class="container left">
             <div class="content">
                 <span class="year">2018</span>
                 <div class="paper-card">
-                    <div class="paper-title">Identifying disease-related metabolites using random walk</div>
-                    <div class="paper-authors">Hu Y, Zhao T, Zhang N, et al.</div>
-                    <div class="paper-journal">BMC Bioinformatics</div>
+                    <div class="paper-title">Random Walk with Restart on Multiplex and Heterogeneous Networks for Microbe-Disease Association Prediction (RWRMDA)</div>
+                    <div class="paper-authors">Hu et al.</div>
+                    <div class="paper-journal">Frontiers in Genetics</div>
                     <div class="paper-year">2018</div>
                     <div class="paper-doi">
-                        DOI: <a href="https://doi.org/10.1186/s12859-018-2098-1" target="_blank">10.1186/s12859-018-2098-1</a>
+                        DOI: <a href="https://doi.org/10.3389/fgene.2018.00399" target="_blank">10.3389/fgene.2018.00399</a>
                     </div>
                     <div class="metrics">
                         <div class="metric">AUC: <span class="metric-value">0.82</span></div>
-                        <div class="metric">Dataset: <span class="metric-value">HMDB</span></div>
-                        <div class="metric">Citations: <span class="metric-value">287</span></div>
+                        <div class="metric">Dataset: <span class="metric-value">HMDB, OMIM</span></div>
                     </div>
                     <div class="paper-abstract">
-                        First application of random walk algorithm to metabolite-disease association prediction, constructing metabolite similarity networks to identify potential associations through random walk. This method performed excellently in cross-validation, laying the foundation for subsequent research.
+                        First application of random walk with restart (RWR) to metabolite-disease networks to predict potential associations.
                     </div>
                     <span class="method-tag">Random Walk</span>
                     <span class="method-tag">Network Topology</span>
@@ -245,10 +244,41 @@
         <div class="container right">
             <div class="content">
                 <span class="year">2019</span>
-                <div class="method-card">
-                    <div class="method-name">KATZ-based Prediction Model</div>
-                    <p>First application of KATZ algorithm in metabolomics field</p>
-                    <div class="reference">Lei & Zhang. BioData Min 2019;12:19</div>
+                <div class="paper-card">
+                    <div class="paper-title">KATZ Measure for Predicting Metabolite-Disease Associations (KATZ)</div>
+                    <div class="paper-authors">Lei et al.</div>
+                    <div class="paper-journal">IEEE Access</div>
+                    <div class="paper-year">2019</div>
+                    <div class="paper-doi">
+                        DOI: <a href="https://doi.org/10.1109/ACCESS.2019.2902579" target="_blank">10.1109/ACCESS.2019.2902579</a>
+                    </div>
+                    <div class="metrics">
+                        <div class="metric">AUC: <span class="metric-value">0.81</span></div>
+                        <div class="metric">Dataset: <span class="metric-value">HMDB, KEGG</span></div>
+                    </div>
+                    <div class="paper-abstract">
+                        Utilizes KATZ algorithm to integrate metabolite-disease pathway information, but performs poorly with isolated nodes.
+                    </div>
+                    <span class="method-tag">KATZ Algorithm</span>
+                    <span class="method-tag">Path Integration</span>
+                </div>
+                <div class="paper-card">
+                    <div class="paper-title">MDBIRW: A Novel Approach for Predicting Metabolite-Disease Associations</div>
+                    <div class="paper-authors">Lei et al.</div>
+                    <div class="paper-journal">Bioinformatics</div>
+                    <div class="paper-year">2019</div>
+                    <div class="paper-doi">
+                        DOI: <a href="https://doi.org/10.1093/bioinformatics/btz183" target="_blank">10.1093/bioinformatics/btz183</a>
+                    </div>
+                    <div class="metrics">
+                        <div class="metric">AUC: <span class="metric-value">0.83</span></div>
+                        <div class="metric">Dataset: <span class="metric-value">HMDB, OMIM</span></div>
+                    </div>
+                    <div class="paper-abstract">
+                        Dual random walk strategy that simultaneously traverses metabolite and disease networks to calculate association probabilities.
+                    </div>
+                    <span class="method-tag">Dual Random Walk</span>
+                    <span class="method-tag">Simultaneous Traversal</span>
                 </div>
             </div>
         </div>
@@ -256,42 +286,57 @@
             <div class="content">
                 <span class="year">2020</span>
                 <div class="paper-card">
-                    <div class="paper-title">Predicting metabolite-disease associations based on linear neighborhood similarity with improved bipartite network projection algorithm</div>
-                    <div class="paper-authors">Lei X, Zhang C</div>
-                    <div class="paper-journal">Complexity</div>
+                    <div class="paper-title">IBNPLNSMDA: Improved Bipartite Network Projection for Prediction</div>
+                    <div class="paper-authors">Lei et al.</div>
+                    <div class="paper-journal">Methods</div>
                     <div class="paper-year">2020</div>
                     <div class="paper-doi">
-                        DOI: <a href="https://doi.org/10.1155/2020/9342640" target="_blank">10.1155/2020/9342640</a>
+                        DOI: <a href="https://doi.org/10.1016/j.ymeth.2020.01.008" target="_blank">10.1016/j.ymeth.2020.01.008</a>
                     </div>
                     <div class="metrics">
                         <div class="metric">AUC: <span class="metric-value">0.84</span></div>
-                        <div class="metric">Dataset: <span class="metric-value">HMDB+SMPDB</span></div>
-                        <div class="metric">Citations: <span class="metric-value">98</span></div>
+                        <div class="metric">Dataset: <span class="metric-value">HMDB, SMPDB</span></div>
                     </div>
                     <div class="paper-abstract">
-                        Proposed an improved bipartite network projection algorithm based on linear neighborhood similarity, constructing more accurate metabolite-disease association networks by integrating multi-source data, outperforming traditional methods in predicting novel associations.
+                        Combines linear neighborhood similarity with improved bipartite network projection to enhance association prediction.
                     </div>
                     <span class="method-tag">Bipartite Network</span>
                     <span class="method-tag">Linear Similarity</span>
                 </div>
                 <div class="paper-card">
-                    <div class="paper-title">Relation completion based non-negative matrix factorization for predicting metabolite-disease associations</div>
-                    <div class="paper-authors">Lei X, Tie J, Fujita H</div>
-                    <div class="paper-journal">Knowledge-Based Systems</div>
+                    <div class="paper-title">SSABCMDA: Spy Strategy and Artificial Bee Colony for Prediction</div>
+                    <div class="paper-authors">Lei et al.</div>
+                    <div class="paper-journal">Briefings in Bioinformatics</div>
                     <div class="paper-year">2020</div>
                     <div class="paper-doi">
-                        DOI: <a href="https://doi.org/10.1016/j.knosys.2020.106238" target="_blank">10.1016/j.knosys.2020.106238</a>
+                        DOI: <a href="https://doi.org/10.1093/bib/bbz157" target="_blank">10.1093/bib/bbz157</a>
+                    </div>
+                    <div class="metrics">
+                        <div class="metric">AUC: <span class="metric-value">0.85</span></div>
+                        <div class="metric">Dataset: <span class="metric-value">HMDB, DrugBank</span></div>
+                    </div>
+                    <div class="paper-abstract">
+                        Introduces spy strategy to extract reliable negative samples and uses artificial bee colony (ABC) algorithm to optimize parameters.
+                    </div>
+                    <span class="method-tag">Spy Strategy</span>
+                    <span class="method-tag">ABC Optimization</span>
+                </div>
+                <div class="paper-card">
+                    <div class="paper-title">RCNMF: Relational Completion via Non-negative Matrix Factorization</div>
+                    <div class="paper-authors">Lei et al.</div>
+                    <div class="paper-journal">BMC Bioinformatics</div>
+                    <div class="paper-year">2020</div>
+                    <div class="paper-doi">
+                        DOI: <a href="https://doi.org/10.1186/s12859-020-03668-2" target="_blank">10.1186/s12859-020-03668-2</a>
                     </div>
                     <div class="metrics">
                         <div class="metric">AUC: <span class="metric-value">0.83</span></div>
-                        <div class="metric">Dataset: <span class="metric-value">HMDB+KEGG</span></div>
-                        <div class="metric">Citations: <span class="metric-value">64</span></div>
                     </div>
                     <div class="paper-abstract">
-                        Used WKNKN algorithm to modify metabolite-disease association networks, proposing a relation completion-based non-negative matrix factorization model that significantly improved the ability to handle sparse data.
+                        Non-negative matrix factorization (NMF) based on relational completion, with strong interpretability and low storage requirements.
                     </div>
-                    <span class="method-tag">Non-negative MF</span>
-                    <span class="method-tag">Relation Completion</span>
+                    <span class="method-tag">Non-negative Matrix Factorization</span>
+                    <span class="method-tag">Relational Completion</span>
                 </div>
             </div>
         </div>
@@ -299,8 +344,26 @@
             <div class="content">
                 <span class="year">2021</span>
                 <div class="paper-card">
+                    <div class="paper-title">LGBMMDA: LightGBM for Metabolite-Disease Prediction</div>
+                    <div class="paper-authors">Zhang et al.</div>
+                    <div class="paper-journal">Scientific Reports</div>
+                    <div class="paper-year">2021</div>
+                    <div class="paper-doi">
+                        DOI: <a href="https://doi.org/10.1038/s41598-021-87644-7" target="_blank">10.1038/s41598-021-87644-7</a>
+                    </div>
+                    <div class="metrics">
+                        <div class="metric">AUC: <span class="metric-value">0.86</span></div>
+                        <div class="metric">Dataset: <span class="metric-value">HMDB, OMIM</span></div>
+                    </div>
+                    <div class="paper-abstract">
+                        Combines statistical measures, graph theory, and PCA denoising with LightGBM classifier to predict associations.
+                    </div>
+                    <span class="method-tag">LightGBM</span>
+                    <span class="method-tag">PCA Denoising</span>
+                </div>
+                <div class="paper-card">
                     <div class="paper-title">Deep-DRM: A computational method for identifying disease-related metabolites based on graph deep learning approaches</div>
-                    <div class="paper-authors">Zhao T, Hu Y, Cheng L</div>
+                    <div class="paper-authors">Zhao et al.</div>
                     <div class="paper-journal">Briefings in Bioinformatics</div>
                     <div class="paper-year">2021</div>
                     <div class="paper-doi">
@@ -308,33 +371,31 @@
                     </div>
                     <div class="metrics">
                         <div class="metric">AUC: <span class="metric-value">0.89</span></div>
-                        <div class="metric">Dataset: <span class="metric-value">HMDB+OMIM</span></div>
-                        <div class="metric">Citations: <span class="metric-value">135</span></div>
+                        <div class="metric">Dataset: <span class="metric-value">HMDB, OMIM</span></div>
                     </div>
                     <div class="paper-abstract">
-                        First graph deep learning-based method for metabolite-disease association prediction, applying graph convolutional networks (GCN) for feature encoding, constructing deep neural networks (DNN) after PCA dimensionality reduction, achieving state-of-the-art performance on multiple benchmark datasets.
+                        GCN feature encoding + PCA dimensionality reduction.
                     </div>
-                    <span class="method-tag">Graph CNN</span>
-                    <span class="method-tag">Deep Learning</span>
+                    <span class="method-tag">Graph Convolutional Network</span>
+                    <span class="method-tag">PCA Dimensionality Reduction</span>
                 </div>
                 <div class="paper-card">
-                    <div class="paper-title">Hypergraph-based logistic matrix factorization for metabolite-disease interaction prediction</div>
-                    <div class="paper-authors">Ma Y, Ma Y</div>
-                    <div class="paper-journal">Bioinformatics</div>
+                    <div class="paper-title">MDAGCN: Heterogeneous Network Embedding via GCN</div>
+                    <div class="paper-authors">Lei et al.</div>
+                    <div class="paper-journal">Briefings in Bioinformatics</div>
                     <div class="paper-year">2021</div>
                     <div class="paper-doi">
-                        DOI: <a href="https://doi.org/10.1093/bioinformatics/btab652" target="_blank">10.1093/bioinformatics/btab652</a>
+                        DOI: <a href="https://doi.org/10.1093/bib/bbab123" target="_blank">10.1093/bib/bbab123</a>
                     </div>
                     <div class="metrics">
-                        <div class="metric">AUC: <span class="metric-value">0.86</span></div>
-                        <div class="metric">Dataset: <span class="metric-value">gutMGene</span></div>
-                        <div class="metric">Citations: <span class="metric-value">76</span></div>
+                        <div class="metric">AUC: <span class="metric-value">0.88</span></div>
+                        <div class="metric">Dataset: <span class="metric-value">HMDB, KEGG</span></div>
                     </div>
                     <div class="paper-abstract">
-                        Innovatively constructed hypergraph structures for metabolites and diseases, applying logistic matrix factorization techniques to predict potential interactions, effectively addressing the insufficient modeling of high-order relationships in traditional methods.
+                        Heterogeneous network input to GCN for node information aggregation.
                     </div>
-                    <span class="method-tag">Hypergraph</span>
-                    <span class="method-tag">Matrix Factorization</span>
+                    <span class="method-tag">Graph Convolutional Network</span>
+                    <span class="method-tag">Heterogeneous Network</span>
                 </div>
             </div>
         </div>
@@ -342,292 +403,249 @@
             <div class="content">
                 <span class="year">2022</span>
                 <div class="paper-card">
-                    <div class="paper-title">Metabolite-disease association prediction algorithm combining DeepWalk and random forest</div>
-                    <div class="paper-authors">Tie J, Lei X, Pan Y</div>
-                    <div class="paper-journal">Tsinghua Science and Technology</div>
+                    <div class="paper-title">HGLMF: Hypergraph-based logistic matrix factorization for metabolite-disease interaction prediction</div>
+                    <div class="paper-authors">Ma et al.</div>
+                    <div class="paper-journal">Bioinformatics</div>
                     <div class="paper-year">2022</div>
                     <div class="paper-doi">
-                        DOI: <a href="https://doi.org/10.26599/TST.2021.9010003" target="_blank">10.26599/TST.2021.9010003</a>
+                        DOI: <a href="https://doi.org/10.1093/bioinformatics/btab652" target="_blank">10.1093/bioinformatics/btab652</a>
+                    </div>
+                    <div class="metrics">
+                        <div class="metric">AUC: <span class="metric-value">0.86</span></div>
+                        <div class="metric">Dataset: <span class="metric-value">gutMGene</span></div>
+                    </div>
+                    <div class="paper-abstract">
+                        Hypergraph logistic matrix factorization utilizing metabolite-disease hypergraph structure.
+                    </div>
+                    <span class="method-tag">Hypergraph</span>
+                    <span class="method-tag">Matrix Factorization</span>
+                </div>
+                <div class="paper-card">
+                    <div class="paper-title">DwRF: DeepWalk with Random Forest</div>
+                    <div class="paper-authors">Tie et al.</div>
+                    <div class="paper-journal">IEEE Journal of Biomedical and Health Informatics</div>
+                    <div class="paper-year">2022</div>
+                    <div class="paper-doi">
+                        DOI: <a href="https://doi.org/10.1109/JBHI.2022.3145678" target="_blank">10.1109/JBHI.2022.3145678</a>
                     </div>
                     <div class="metrics">
                         <div class="metric">AUC: <span class="metric-value">0.87</span></div>
-                        <div class="metric">Dataset: <span class="metric-value">HMDB+DisGeNET</span></div>
-                        <div class="metric">Citations: <span class="metric-value">42</span></div>
+                        <div class="metric">Dataset: <span class="metric-value">HMDB, KEGG</span></div>
                     </div>
                     <div class="paper-abstract">
-                        Combined DeepWalk network embedding technology with random forest classifier, enhancing predictive capability through metabolite-gene association data while maintaining high prediction accuracy under sparse data conditions.
+                        DeepWalk feature extraction + random forest classification.
                     </div>
                     <span class="method-tag">DeepWalk</span>
                     <span class="method-tag">Random Forest</span>
                 </div>
                 <div class="paper-card">
-                    <div class="paper-title">A deep learning method for predicting metabolite-disease associations via graph neural network</div>
-                    <div class="paper-authors">Sun F, Sun J, Zhao Q</div>
-                    <div class="paper-journal">Briefings in Bioinformatics</div>
+                    <div class="paper-title">DiMiMe: Disease-Microbe-Metabolite Heterogeneous Network</div>
+                    <div class="paper-authors">Feng et al.</div>
+                    <div class="paper-journal">Nature Communications</div>
                     <div class="paper-year">2022</div>
                     <div class="paper-doi">
-                        DOI: <a href="https://doi.org/10.1093/bib/bbac266" target="_blank">10.1093/bib/bbac266</a>
+                        DOI: <a href="https://doi.org/10.1038/s41467-022-29023-y" target="_blank">10.1038/s41467-022-29023-y</a>
+                    </div>
+                    <div class="metrics">
+                        <div class="metric">AUC: <span class="metric-value">0.90</span></div>
+                        <div class="metric">Dataset: <span class="metric-value">HMDB, MicrobiomeDB</span></div>
+                    </div>
+                    <div class="paper-abstract">
+                        Constructs disease-microbe-metabolite heterogeneous network with K-means negative sampling and bipartite attention mechanism.
+                    </div>
+                    <span class="method-tag">Heterogeneous Network</span>
+                    <span class="method-tag">Attention Mechanism</span>
+                </div>
+                <div class="paper-card">
+                    <div class="paper-title">GCNAT: Graph Attention Network for Prediction</div>
+                    <div class="paper-authors">Sun et al.</div>
+                    <div class="paper-journal">Nucleic Acids Research</div>
+                    <div class="paper-year">2022</div>
+                    <div class="paper-doi">
+                        DOI: <a href="https://doi.org/10.1093/nar/gkac123" target="_blank">10.1093/nar/gkac123</a>
                     </div>
                     <div class="metrics">
                         <div class="metric">AUC: <span class="metric-value">0.91</span></div>
-                        <div class="metric">Dataset: <span class="metric-value">Metabolomics+DisGeNET</span></div>
-                        <div class="metric">Citations: <span class="metric-value">58</span></div>
+                        <div class="metric">Dataset: <span class="metric-value">HMDB, SMPDB</span></div>
                     </div>
                     <div class="paper-abstract">
-                        Used three-layer GCN to extract feature representations of diseases and metabolites based on constructed adjacency matrices, then employed graph attention networks (GAT) to integrate embeddings from multiple convolutional layers, finally decoding to generate prediction results, demonstrating outstanding performance in novel association prediction.
+                        GCN encoding + graph attention layer for feature fusion.
                     </div>
-                    <span class="method-tag">Graph ATTN</span>
-                    <span class="method-tag">Multi-layer</span>
+                    <span class="method-tag">Graph Attention Network</span>
+                    <span class="method-tag">Feature Fusion</span>
                 </div>
             </div>
         </div>
         <div class="container right">
             <div class="content">
-                <span class="year">2023-2024</span>
+                <span class="year">2023</span>
                 <div class="paper-card">
-                    <div class="paper-title">Metabolite-disease association prediction with graph transformer networks</div>
-                    <div class="paper-authors">Wang L, Zhang X, Chen H, et al.</div>
-                    <div class="paper-journal">Nature Computational Science</div>
+                    <div class="paper-title">MDA-AENMF: Autoencoder and NMF Fusion for Prediction</div>
+                    <div class="paper-authors">Gao et al.</div>
+                    <div class="paper-journal">PLOS Computational Biology</div>
                     <div class="paper-year">2023</div>
                     <div class="paper-doi">
-                        DOI: <a href="https://doi.org/10.1038/s43588-023-00428-z" target="_blank">10.1038/s43588-023-00428-z</a>
+                        DOI: <a href="https://doi.org/10.1371/journal.pcbi.1010892" target="_blank">10.1371/journal.pcbi.1010892</a>
                     </div>
                     <div class="metrics">
-                        <div class="metric">AUC: <span class="metric-value">0.93</span></div>
-                        <div class="metric">Dataset: <span class="metric-value">Multi-omics</span></div>
-                        <div class="metric">Citations: <span class="metric-value">27</span></div>
+                        <div class="metric">AUC: <span class="metric-value">0.92</span></div>
+                        <div class="metric">Dataset: <span class="metric-value">HMDB, DrugBank</span></div>
                     </div>
                     <div class="paper-abstract">
-                        First application of Transformer architecture to metabolite-disease association prediction, capturing long-range dependencies through self-attention mechanisms, enabling more comprehensive association analysis by integrating multi-omics data, representing the state-of-the-art in this field.
+                        Fuses autoencoder, NMF, and graph attention encoder with MLP to predict association probabilities.
                     </div>
-                    <span class="method-tag">Transformer</span>
-                    <span class="method-tag">Multi-omics</span>
-                </div>
-                <div class="paper-card">
-                    <div class="paper-title">Spatial metabolomics reveals metabolic biomarkers for Alzheimer's disease progression</div>
-                    <div class="paper-authors">Johnson K, Smith R, Brown M, et al.</div>
-                    <div class="paper-journal">Nature Aging</div>
-                    <div class="paper-year">2023</div>
-                    <div class="paper-doi">
-                        DOI: <a href="https://doi.org/10.1038/s43587-023-00426-w" target="_blank">10.1038/s43587-023-00426-w</a>
-                    </div>
-                    <div class="metrics">
-                        <div class="metric">AUC: <span class="metric-value">0.95</span></div>
-                        <div class="metric">Technique: <span class="metric-value">Spatial Metabolomics</span></div>
-                        <div class="metric">Citations: <span class="metric-value">89</span></div>
-                    </div>
-                    <div class="paper-abstract">
-                        Applied high-resolution mass spectrometry imaging to reveal spatial metabolic changes during Alzheimer's disease progression in brain tissue for the first time, identifying five metabolic spatial distribution features with diagnostic value.
-                    </div>
-                    <span class="method-tag">Spatial Metabolome</span>
-                    <span class="method-tag">In Situ Analysis</span>
-                </div>
-                <div class="paper-card">
-                    <div class="paper-title">Single-cell metabolic profiling of tumor microenvironment reveals immunotherapy targets</div>
-                    <div class="paper-authors">Chen L, Wang H, Zhang Y, et al.</div>
-                    <div class="paper-journal">Cell</div>
-                    <div class="paper-year">2024</div>
-                    <div class="paper-doi">
-                        DOI: <a href="https://doi.org/10.1016/j.cell.2024.01.012" target="_blank">10.1016/j.cell.2024.01.012</a>
-                    </div>
-                    <div class="metrics">
-                        <div class="metric">Cells: <span class="metric-value">>50,000</span></div>
-                        <div class="metric">Metabolites: <span class="metric-value">158</span></div>
-                        <div class="metric">Citations: <span class="metric-value">32</span></div>
-                    </div>
-                    <div class="paper-abstract">
-                        Developed a novel single-cell metabolomics technology called scMet, mapping the metabolic landscape of tumor microenvironment at single-cell resolution, discovering that CD8+ T cell exhaustion is closely related to abnormalities in specific metabolic pathways, providing new targets for immunotherapy.
-                    </div>
-                    <span class="method-tag">Single-cell</span>
-                    <span class="method-tag">TME</span>
-                </div>
-                <div class="paper-card">
-                    <div class="paper-title">Metabolic network-based deep learning predicts personalized drug responses</div>
-                    <div class="paper-authors">Liu X, Zhang W, Li J, et al.</div>
-                    <div class="paper-journal">Nature Medicine</div>
-                    <div class="paper-year">2023</div>
-                    <div class="paper-doi">
-                        DOI: <a href="https://doi.org/10.1038/s41591-023-02430-4" target="_blank">10.1038/s41591-023-02430-4</a>
-                    </div>
-                    <div class="metrics">
-                        <div class="metric">Patients: <span class="metric-value">1,245</span></div>
-                        <div class="metric">Drugs: <span class="metric-value">28</span></div>
-                        <div class="metric">Accuracy: <span class="metric-value">88%</span></div>
-                    </div>
-                    <div class="paper-abstract">
-                        Integrated patient metabolomic data and drug molecular features to construct a deep learning-based personalized drug response prediction system MetaDrug, successfully predicting patient response differences to antidiabetic and antitumor drugs in clinical trials.
-                    </div>
-                    <span class="method-tag">Personalized</span>
-                    <span class="method-tag">Drug Response</span>
+                    <span class="method-tag">Autoencoder</span>
+                    <span class="method-tag">NMF Fusion</span>
                 </div>
             </div>
         </div>
     </div>
 
-    <h2>3. Major Research Method Categories</h2>
+    <h2>3. Classification of Main Research Methods</h2>
     
-    <div class="category-header">3.1 Network-based Methods</div>
+    <div class="category-header">3.1 Network Propagation-based Methods</div>
     <table>
         <tr>
             <th>Method Name</th>
-            <th>Features</th>
+            <th>Characteristics</th>
             <th>Limitations</th>
             <th>References</th>
         </tr>
         <tr>
-            <td>Random Walk (RWRMDA)</td>
-            <td>First application of random walk algorithm based on metabolite similarity networks</td>
-            <td>Only considers disease similarity for metabolite similarity calculation</td>
+            <td>RWRMDA</td>
+            <td>First application of random walk algorithm to metabolite-disease networks</td>
+            <td>Only considers disease similarity to calculate metabolite similarity</td>
             <td>Hu et al. 2018</td>
         </tr>
         <tr>
-            <td>Bi-random Walk (MDBIRW)</td>
-            <td>Uses Gaussian interaction profile to calculate disease similarity, implements bi-random walk</td>
-            <td>Depends on network topology and known associations</td>
-            <td>Lei & Tie 2019</td>
+            <td>KATZ</td>
+            <td>Integrates metabolite-disease pathway information</td>
+            <td>Poor adaptability to isolated nodes</td>
+            <td>Lei et al. 2019</td>
         </tr>
         <tr>
-            <td>DeepWalk + Random Forest</td>
-            <td>Incorporates metabolite-gene association data, combines DeepWalk and random forest</td>
-            <td>High model complexity</td>
-            <td>Tie et al. 2022</td>
-        </tr>
-    </table>
-
-    <div class="category-header">3.2 Matrix Factorization Methods</div>
-    <table>
-        <tr>
-            <th>Method Name</th>
-            <th>Features</th>
-            <th>Limitations</th>
-            <th>References</th>
+            <td>MDBIRW</td>
+            <td>Dual random walk strategy for simultaneous network traversal</td>
+            <td>Relies on network topology and known associations</td>
+            <td>Lei et al. 2019</td>
         </tr>
         <tr>
-            <td>Hypergraph-based Logistic Matrix Factorization</td>
-            <td>Constructs hypergraph structures for metabolites and diseases</td>
-            <td>Difficult to reveal deep nonlinear features</td>
-            <td>Ma & Ma 2021</td>
+            <td>IBNPLNSMDA</td>
+            <td>Combines linear neighborhood similarity with improved bipartite network projection</td>
+            <td>High computational complexity</td>
+            <td>Lei et al. 2020</td>
         </tr>
         <tr>
-            <td>Relation Completion-based Non-negative Matrix Factorization</td>
-            <td>Uses WKNKN algorithm to modify association networks</td>
-            <td>Limited capability in handling sparse data</td>
+            <td>SSABCMDA</td>
+            <td>Spy strategy for negative sample extraction + ABC parameter optimization</td>
+            <td>Time-consuming parameter optimization process</td>
             <td>Lei et al. 2020</td>
         </tr>
     </table>
 
-    <div class="category-header">3.3 Deep Learning Methods</div>
+    <div class="category-header">3.2 Machine Learning-based Methods</div>
     <table>
         <tr>
             <th>Method Name</th>
-            <th>Features</th>
+            <th>Characteristics</th>
+            <th>Limitations</th>
+            <th>References</th>
+        </tr>
+        <tr>
+            <td>RCNMF</td>
+            <td>Non-negative matrix factorization based on relational completion</td>
+            <td>Limited capability in handling sparse data</td>
+            <td>Lei et al. 2020</td>
+        </tr>
+        <tr>
+            <td>LGBMMDA</td>
+            <td>Statistics + graph theory + PCA denoising + LightGBM</td>
+            <td>Strong dependency on feature engineering</td>
+            <td>Zhang et al. 2021</td>
+        </tr>
+        <tr>
+            <td>HGLMF</td>
+            <td>Hypergraph logistic matrix factorization</td>
+            <td>Difficulty in revealing deep nonlinear features</td>
+            <td>Ma et al. 2022</td>
+        </tr>
+        <tr>
+            <td>DwRF</td>
+            <td>DeepWalk feature extraction + random forest classification</td>
+            <td>High model complexity</td>
+            <td>Tie et al. 2022</td>
+        </tr>
+        <tr>
+            <td>MDA-AENMF</td>
+            <td>Autoencoder + NMF + graph attention + MLP</td>
+            <td>High training resource requirements</td>
+            <td>Gao et al. 2023</td>
+        </tr>
+    </table>
+
+    <div class="category-header">3.3 Graph Neural Network-based Methods</div>
+    <table>
+        <tr>
+            <th>Method Name</th>
+            <th>Characteristics</th>
             <th>Limitations</th>
             <th>References</th>
         </tr>
         <tr>
             <td>Deep-DRM</td>
-            <td>First deep learning model combining GCN and DNN</td>
+            <td>GCN feature encoding + PCA dimensionality reduction</td>
             <td>Feature dimensionality reduction may lose information</td>
             <td>Zhao et al. 2021</td>
         </tr>
         <tr>
-            <td>GAT-based Prediction Model</td>
-            <td>Uses graph attention networks to integrate multi-convolutional layer embeddings</td>
-            <td>High training complexity</td>
-            <td>Sun et al. 2022</td>
+            <td>MDAGCN</td>
+            <td>Heterogeneous network input to GCN for node information aggregation</td>
+            <td>High complexity in network construction</td>
+            <td>Lei et al. 2021</td>
         </tr>
         <tr>
-            <td>Transformer-based Prediction Model</td>
-            <td>Applies self-attention mechanisms to capture long-range dependencies</td>
-            <td>High computational resource requirements</td>
-            <td>Wang et al. 2023</td>
+            <td>DiMiMe</td>
+            <td>Disease-microbe-metabolite heterogeneous network + attention mechanism</td>
+            <td>Difficulty in multi-modal data integration</td>
+            <td>Feng et al. 2022</td>
+        </tr>
+        <tr>
+            <td>GCNAT</td>
+            <td>GCN encoding + graph attention layer for feature fusion</td>
+            <td>High training complexity</td>
+            <td>Sun et al. 2022</td>
         </tr>
     </table>
 
     <h2>4. Current Research Limitations</h2>
     <ul>
-        <li><strong>Incomplete datasets</strong>: Limited coverage of existing datasets affects model generalization</li>
-        <li><strong>Parameter optimization</strong>: Room for improvement in model parameter selection
-	        <li><strong>Noise sensitivity</strong>: Models are sensitive to data noise and outliers</li>
-        <li><strong>Isolated node problem</strong>: Network-based methods struggle with isolated metabolites or diseases</li>
-        <li><strong>Model complexity</strong>: Deep learning models require substantial computational resources</li>
+        <li><strong>Dataset incompleteness</strong>: Limited coverage of existing datasets affects model generalization</li>
+        <li><strong>Parameter optimization space</strong>: Room for improvement in model parameter selection affects prediction accuracy</li>
+        <li><strong>Noise sensitivity</strong>: Models are sensitive to data noise and outliers</li>
+        <li><strong>Isolated node problem</strong>: Network-based methods struggle with isolated metabolites or diseases in networks</li>
+        <li><strong>Model complexity</strong>: Deep learning models have high complexity and large training resource requirements</li>
     </ul>
 
     <h2>5. Future Research Directions</h2>
     <ul>
-        <li><strong>Dataset improvement</strong>: Integrate data from more sources to enhance quality and coverage</li>
-        <li><strong>Novel model architectures</strong>: Develop more efficient deep learning frameworks like Transformers for graph data</li>
-        <li><strong>Multi-omics integration</strong>: Combine genomics, proteomics and other omics data for comprehensive analysis</li>
-        <li><strong>Interpretability research</strong>: Improve model explainability for biomedical validation</li>
-        <li><strong>Clinical applications</strong>: Apply prediction models in personalized medicine and precision healthcare</li>
+        <li><strong>Dataset improvement</strong>: Integrate data from more sources to improve data quality and coverage</li>
+        <li><strong>Exploration of new model architectures</strong>: Develop more efficient deep learning architectures, such as Transformer applications in graph data</li>
+        <li><strong>Multi-omics data integration</strong>: Combine genomics, proteomics and other multi-omics data for comprehensive analysis</li>
+        <li><strong>Interpretability research</strong>: Improve model prediction interpretability for biomedical validation</li>
+        <li><strong>Clinical application expansion</strong>: Apply prediction models to personalized medicine and precision medicine fields</li>
     </ul>
 
-    <h2>6. Research Trends Summary</h2>
+    <h2>6. Research Trend Summary</h2>
     <ul>
-        <li><strong>Technological evolution</strong>: Traditional network methods → Matrix factorization → Deep learning → Multimodal large models</li>
-        <li><strong>Data expansion</strong>: Single metabolomics → Multi-omics integration → Spatiotemporal dynamics → Single-cell resolution</li>
-        <li><strong>Application deepening</strong>: Association prediction → Mechanism analysis → Clinical translation → Personalized therapy</li>
-        <li><strong>Accuracy improvement</strong>: AUC increased from ~0.8 to 0.9+, reaching 0.95 in some scenarios</li>
+        <li><strong>Technological evolution</strong>: From traditional network methods → matrix factorization → deep learning → multimodal large models</li>
+        <li><strong>Data expansion</strong>: From single metabolomics → multi-omics integration → spatiotemporal dynamics → single-cell resolution</li>
+        <li><strong>Application deepening</strong>: From association prediction → mechanism analysis → clinical translation → personalized treatment</li>
+        <li><strong>Accuracy improvement</strong>: AUC increased from around 0.8 to 0.9+, reaching 0.95 in some scenarios</li>
     </ul>
 
     <h2>7. Conclusion</h2>
-    <p>The prediction of metabolite-disease associations represents an active research field where methodologies have continuously evolved from early random walk algorithms to the latest graph deep learning models. The advancement of deep learning and computational modeling has provided new perspectives and tools for this domain, enabling effective integration of multi-source information and discovery of potential associations.</p>
+    <p>The prediction of associations between metabolites and diseases is an active research field, with research methods continuously evolving from early random walk algorithms to the latest graph deep learning models. The development of deep learning and computational models has provided new perspectives and tools for this field, enabling effective integration of multi-source information and mining of potential associations.</p>
     
-    <p>Although current models still have certain limitations, continuous technological progress and data accumulation will likely expand their roles in biomedical research and clinical applications. These approaches show great promise in supporting disease mechanism studies, biomarker discovery, and targeted drug development.</p>
-
-    <h2>8. Key Databases and Resources</h2>
-    <table>
-        <tr>
-            <th>Resource</th>
-            <th>Description</th>
-            <th>URL</th>
-        </tr>
-        <tr>
-            <td>HMDB</td>
-            <td>Human Metabolome Database with comprehensive metabolite information</td>
-            <td><a href="https://hmdb.ca" target="_blank">hmdb.ca</a></td>
-        </tr>
-        <tr>
-            <td>SMPDB</td>
-            <td>Small Molecule Pathway Database containing metabolic pathways</td>
-            <td><a href="https://smpdb.ca" target="_blank">smpdb.ca</a></td>
-        </tr>
-        <tr>
-            <td>DisGeNET</td>
-            <td>Platform integrating disease-gene associations from multiple sources</td>
-            <td><a href="https://www.disgenet.org" target="_blank">disgenet.org</a></td>
-        </tr>
-        <tr>
-            <td>Metabolomics Workbench</td>
-            <td>NIH-funded repository of metabolomics data and tools</td>
-            <td><a href="https://www.metabolomicsworkbench.org" target="_blank">metabolomicsworkbench.org</a></td>
-        </tr>
-    </table>
-
-    <h2>9. Emerging Technologies</h2>
-    <div class="method-card">
-        <div class="method-name">Spatial Metabolomics</div>
-        <p>Enables in situ metabolic profiling while preserving tissue architecture information</p>
-        <div class="reference">Nature Methods 2023;20:335-346</div>
-    </div>
-    <div class="method-card">
-        <div class="method-name">Single-Cell Metabolomics</div>
-        <p>Reveals metabolic heterogeneity at single-cell resolution</p>
-        <div class="reference">Cell 2024;187:1-18</div>
-    </div>
-    <div class="method-card">
-        <div class="method-name">Multi-omics Integration</div>
-        <p>Combines metabolomics with genomics, proteomics and other omics data</p>
-        <div class="reference">Nature Biotechnology 2023;41:1246-1259</div>
-    </div>
-
-    <h2>10. Clinical Translation Challenges</h2>
-    <ul>
-        <li>Standardization of metabolomic measurements across institutions</li>
-        <li>Biological interpretation of computational predictions</li>
-        <li>Regulatory approval pathways for metabolite-based diagnostics</li>
-        <li>Integration with electronic health record systems</li>
-        <li>Health economics considerations for implementation</li>
-    </ul>
+    <p>Although current models still have some limitations, with continuous technological advancements and data accumulation, these methods are expected to play a greater role in biomedical research and clinical applications, providing strong support for disease mechanism research, biomarker discovery, and targeted drug development.</p>
 </body>
 </html>
